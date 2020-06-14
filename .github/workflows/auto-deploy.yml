@@ -28,5 +28,4 @@ jobs:
     - name: Install Surge on ubuntu VM
       uses: npx install --global surge         # this time we use npx instead of npm and -g instead of --global 
     - name: Deploy our WebSite/Application on Surge
-      run: surge ./ BootCampEng2020.surge.sh --token ${{ secrets.SURGE_TOKEN}} # Once we create git secrets, we can use it again & again
-      # Note: Here ./ means current git direcotory i.e BootCampEng2020 / .github/workflow
+      run: surge ./ BootCampEng2020.surge.sh --token ${{ secrets.SURGE_TOKEN}} # Once we create git secrets, we can use it again & again      
