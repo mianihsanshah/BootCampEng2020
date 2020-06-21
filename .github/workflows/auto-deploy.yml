@@ -29,4 +29,4 @@ jobs:
     - name: Installing surge on ubuntu VM
       run:  npm install --global surge
     - name: deploying our application on Surge
-      run: surge ./ BootCampEng2020.surge.sh --token ${{ secrets.SURGE_TOKEN}} 
+      run: surge ./ http://bootcampeng-class1.surge.sh/ --token ${{ secrets.SURGE_TOKEN}} 
